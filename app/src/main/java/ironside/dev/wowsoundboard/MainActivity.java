@@ -1,4 +1,4 @@
-package ironside.dev.apexsoundboard;
+package ironside.dev.wowsoundboard;
 
 
 import android.media.MediaPlayer;
@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer mysound1;
     MediaPlayer mysound2;
     MediaPlayer mysound3;
+    MediaPlayer mysound4;
 
 
     @Override
@@ -22,9 +23,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mysound1 = MediaPlayer.create(this, R.raw.mozambi);
-        mysound2 = MediaPlayer.create(this, R.raw.robobitch);
-        mysound3 = MediaPlayer.create(this, R.raw.bambuzu1);
+        mysound1 = MediaPlayer.create(this, R.raw.orclaugh);
+        mysound2 = MediaPlayer.create(this, R.raw.bl);
+        mysound3 = MediaPlayer.create(this, R.raw.humanlaugh);
+        mysound4 = MediaPlayer.create(this, R.raw.hero);
 
     }
 
@@ -41,5 +43,10 @@ public class MainActivity extends AppCompatActivity {
     public void sound3(View view)
     {
         mysound3.start();
+    }
+
+    public void sound4(View view)
+    {
+        mysound4.start();
     }
 }

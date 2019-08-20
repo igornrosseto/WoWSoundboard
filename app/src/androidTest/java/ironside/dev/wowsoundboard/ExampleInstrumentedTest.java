@@ -1,4 +1,4 @@
-package ironside.dev.apexsoundboard;
+package ironside.dev.wowsoundboard;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
